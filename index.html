@@ -11,40 +11,40 @@
     <header id="header">
       <h1>Calories Counter</h1>
     </header>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Description</th>
-              <th>Calories</th>
-              <th>Carbs</th>
-              <th>Protein</th>
-            </tr>
-          </thead>
-          <tbody id="list-items">
-          </tbody>
-          <tfoot>
-            <tr>
-              <td id="total">Total</td>
-              <td id="total-calories">0</td>
-              <td id="total-carbs">0</td>
-              <td id="total-protein">0</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-      <div class="form-container">
-        <form action="javascript:void(0);">
-          <div>
-            <input type="text" name="description" id="description" placeholder="Description">
-            <input type="number" min="0" name="calories" id="calories" placeholder="Calories">
-            <input type="number" min="0" name="carbs" id="calories" placeholder="Carbs">
-            <input type="number" min="0" name="protein" id="protein" placeholder="Protein">
-          </div>
-          <button class="add" id="add">+</button>
-        </form>
-      </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Calories</th>
+            <th>Carbs</th>
+            <th>Protein</th>
+          </tr>
+        </thead>
+        <tbody id="list-items">
+        </tbody>
+        <tfoot>
+          <tr>
+            <td id="total">Total</td>
+            <td id="total-calories">0</td>
+            <td id="total-carbs">0</td>
+            <td id="total-protein">0</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-    <script src="./js/main.js"></script>
+    <div class="form-container">
+      <form action="javascript:void(0);">
+        <div>
+          <input type="text" name="description" id="description" placeholder="Description">
+          <input type="number" min="0" name="calories" id="calories" placeholder="Calories">
+          <input type="number" min="0" name="carbohydrates" id="carbohydrates" placeholder="Carbohydrates">
+          <input type="number" min="0" name="protein" id="protein" placeholder="Protein">
+        </div>
+        <button class="add" id="add">+</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
