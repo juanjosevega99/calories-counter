@@ -31,3 +31,34 @@ body, h1 {
   border-bottom: 1px solid var(--border);
   padding: 1em;
 }
+
+[class*=-container] {
+  padding: 2rem;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+table, th, td {
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-collapse: collapse;
+  padding: 0.75rem;
+}
+
+#total {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--background);
+  border-spacing: 1rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
