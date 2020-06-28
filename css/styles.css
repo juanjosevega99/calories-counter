@@ -62,3 +62,78 @@ tbody tr:nth-child(odd) {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+input {
+  border: var(--border);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 0.25rem;
+  height: 2em;
+  transition: 0.3s;
+}
+
+table input {
+  width: 100px;
+  text-align: center;
+  color: var(--black);
+  -webkit-appearance: textfield;
+  background: transparent;
+}
+
+table input.enabled {
+  background: white;
+  -webkit-appearance: scrollbargripper-vertical;
+  -moz-appearance: scrollbartrack-vertical;
+}
+
+.form-container div input_focus {
+  box-shadow: 0 0 10px var(--ok);
+}
+
+.form-container div input:invalid,
+.form-container div input:is-invalid,
+table input.is-invalid {
+  box-shadow: 0 0 10px var(--invalid);
+}
+
+button {
+  margin: 0.25rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+button:active {
+  transform: scale(0.8);
+}
+button.add {
+  transform: var(--button);
+}
+button.remove::before {
+  content: "X";
+}
+button.remove {
+  background-color: var(--button-default);
+}
+button.remove:hover {
+  background-color: var(--remove-hover);
+}
+button.edit::before {
+  content: "MOD";
+}
+button.edit {
+  width: max-content;
+  background-color: var(--button-default);
+}
+button.edit:hover {
+  background-color: var(--edit);
+}
