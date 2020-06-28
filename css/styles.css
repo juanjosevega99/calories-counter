@@ -1,7 +1,17 @@
 :root {
+  --background: #e9ecef;
+  --border: #dee2e6;
   --black: rgb(50, 50, 50);
+  --invalid: red;
+  --button-default: gainsboro;
+  --remove-hover: red;
+  --ok: dodgerblue;
+  --edit: limegreen;
+  --buton: dodgerblue;
+  --buton-hover: rgb(28, 125, 221);
 }
 
-body {
+body, h1 {
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--black)
 }
