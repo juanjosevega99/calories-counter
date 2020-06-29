@@ -12,3 +12,15 @@ const attrToString = (obj = {}) =>
   Object.keys(obj)
     .map((key) => `${key}="${obj[key]}"`)
     .join(" ");
+
+const add = (list) => {
+  const newItem = {
+    description: $DESCRIPTION.value,
+    calories: parseInt($CALORIES.value),
+    carbs: parseInt($CARBOHYDRATES.value),
+    protein: parseInt($PROTEIN.value),
+  };
+
+  list.push(newItem);
+  console.log(list);
+};
