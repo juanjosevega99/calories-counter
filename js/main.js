@@ -31,3 +31,9 @@ const clearInputs = () => {
   $CARBOHYDRATES.value = "";
   $PROTEIN.value = "";
 };
+
+const removeItem = (index) => {
+  itemsList.splice(index, 1);
+  updateTotal();
+  renderItems();
+};
