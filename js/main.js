@@ -24,3 +24,10 @@ const add = (list) => {
   list.push(newItem);
   console.log(list);
 };
+
+const clearInputs = () => {
+  $DESCRIPTION.value = "";
+  $CALORIES.value = "";
+  $CARBOHYDRATES.value = "";
+  $PROTEIN.value = "";
+};
